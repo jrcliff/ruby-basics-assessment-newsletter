@@ -28,7 +28,6 @@ ARTICLES = [
 #########################
 
 def calculate_recipients
- # SUBSCRIBERS.select do |element|
     SUBSCRIBERS - UNSUBSCRIBED
   # Using the SUBSCRIBERS and UNSUBSCRIBED arrays,
   # write a method that will return an array of only the subscribers who haven't unsubscribed
@@ -36,9 +35,8 @@ end
 
 def first_n_articles(number_of_articles)
   ARTICLES.first(number_of_articles)
-
 end
-#binding.pry
+
 
 
 def print_recipients
@@ -47,17 +45,16 @@ def print_recipients
   # and returns a list of emails separated by commas
   # Ex) "abc@email.com, def@email.com, ghi@email.com"
 end
-#binding.pry
+
+
 def print_one_article(article)
   puts "#{article[:title]}" 
   puts "by: #{article[:author]}" 
   puts "#{article[:text]}"
-  #binding.pry
   # Write a method that will take an article hash
   # and print the title, author and text as a formatted string
   # See the README/sample output for examples
 end
-#binding.pry
 
 def print_many_articles(articles)
   articles.each do |index|
@@ -98,7 +95,6 @@ def print_newsletter(number)
 
   
 end
-#binding.pry
 
 def run
   # We want our program to print three articles by default,
